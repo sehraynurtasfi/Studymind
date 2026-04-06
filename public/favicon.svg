@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1a1a26"/>
+      <stop offset="100%" stop-color="#09090f"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="60%" stop-color="#ff9f1c"/>
+      <stop offset="100%" stop-color="#ffcc00"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="55%" r="50%">
+      <stop offset="0%" stop-color="#ff6b35" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ff9f1c" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <!-- Glow -->
+  <ellipse cx="32" cy="35" rx="20" ry="18" fill="url(#glow)" filter="url(#blur)"/>
+  <!-- S letterform -->
+  <path d="M38.5 19 C38.5 19 35 16.5 30.5 16.5 C26 16.5 22.5 19.5 22.5 23 C22.5 26.5 25 28.2 29 29.5 L34.5 31.2 C38.8 32.6 41.5 35 41.5 38.8 C41.5 43.2 37.5 47.5 31 47.5 C26 47.5 22 44.5 22 44.5"
+    stroke="url(#flame)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Spark dots -->
+  <circle cx="44" cy="17" r="2.5" fill="#ff9f1c" opacity="0.95"/>
+  <circle cx="49" cy="12" r="1.6" fill="#ffcc00" opacity="0.75"/>
+  <circle cx="46.5" cy="9" r="1" fill="#ff6b35" opacity="0.5"/>
+</svg>
